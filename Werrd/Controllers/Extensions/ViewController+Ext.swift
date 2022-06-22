@@ -15,7 +15,7 @@ extension ViewController {
       return
     }
     let headers = [
-      "X-RapidAPI-Key": "870345d456msh6692fe9241a5defp100fe2jsn6d004256b25b",
+      "X-RapidAPI-Key": "API KEY",
       "X-RapidAPI-Host": "wordsapiv1.p.rapidapi.com"
     ]
 
@@ -63,7 +63,7 @@ extension ViewController {
     }
 
     let headers = [
-      "X-RapidAPI-Key": "870345d456msh6692fe9241a5defp100fe2jsn6d004256b25b",
+      "X-RapidAPI-Key": "API KEY",
       "X-RapidAPI-Host": "wordsapiv1.p.rapidapi.com"
     ]
 
