@@ -34,17 +34,19 @@ extension ViewController {
         let word = try JSONDecoder().decode(Word.self, from: data)
 
         DispatchQueue.main.async {
+          self.mainView.word.text = word.word
           if let result = word.results {
             for result in result {
-              self.mainView.word.text = word.word
               self.mainView.definition.text = result.definition
               self.mainView.posLbl.text = result.partOfSpeech
             }
+          } else {
+            self.mainView.definition.text = "N/A"
+            self.mainView.posLbl.text = "N/A"
           }
           self.mainView.spinner.stopAnimating()
         }
-        
-        print(word)
+//        print(word)
       } catch {
         print("Failed to convert \(error.localizedDescription)")
       }

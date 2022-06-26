@@ -78,7 +78,7 @@ class DetailViewVC: UIViewController {
 
   private let exampleLbl = CustomLbl(text: "Example", tintColor: .white, font: UIFont.systemFont(ofSize: 20, weight: .medium), minimumFontScale: 20)
 
-  var favButton = CustomBttn(size: 30, systemName: "heart", tintColor: .systemPink)
+  var favButton = CustomBttn(size: 30, systemName: "heart", tintColor: .systemBlue)
 
   private var selectedWord: WordArray?
   private var passedFavWord: FavWord?
