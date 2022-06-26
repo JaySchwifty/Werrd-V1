@@ -44,11 +44,11 @@ class MainView: UIView {
     return table
   }()
 
-  let spinner: UIActivityIndicatorView = {
-    let spinner = UIActivityIndicatorView(style: .large)
-    spinner.translatesAutoresizingMaskIntoConstraints = false
-    return spinner
-  }()
+//  let spinner: UIActivityIndicatorView = {
+//    let spinner = UIActivityIndicatorView(style: .large)
+//    spinner.translatesAutoresizingMaskIntoConstraints = false
+//    return spinner
+//  }()
 
   let favButton = CustomBttn(size: 42, systemName: "heart.text.square", tintColor: CustomLbl.color)
 
@@ -83,12 +83,12 @@ class MainView: UIView {
     addSubview(favButton)
     addSubview(subView)
     addSubview(tableView)
-    subView.addSubview(spinner)
+//    subView.addSubview(spinner)
     subView.addSubview(word)
     subView.addSubview(posLbl)
     subView.addSubview(definition)
     subView.addSubview(refreshButton)
-    tableView.addSubview(spinner)
+//    tableView.addSubview(spinner)
 
     word.font = UIFont(name: CustomLbl.fontName, size: 30)
     posLbl.font = UIFont(name: CustomLbl.fontName, size: 15)
@@ -115,8 +115,8 @@ class MainView: UIView {
       subView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30),
       subView.heightAnchor.constraint(equalToConstant: 200),
 
-      spinner.centerXAnchor.constraint(equalTo: subView.centerXAnchor),
-      spinner.centerYAnchor.constraint(equalTo: subView.centerYAnchor),
+//      spinner.centerXAnchor.constraint(equalTo: subView.centerXAnchor),
+//      spinner.centerYAnchor.constraint(equalTo: subView.centerYAnchor),
 
       word.topAnchor.constraint(equalTo: subView.topAnchor, constant: 20),
       word.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 20),

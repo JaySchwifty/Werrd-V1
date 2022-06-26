@@ -15,15 +15,16 @@ extension ViewController {
       return
     }
     let headers = [
-      "X-RapidAPI-Key": "API KEY",
+      "X-RapidAPI-Key": "870345d456msh6692fe9241a5defp100fe2jsn6d004256b25b",
       "X-RapidAPI-Host": "wordsapiv1.p.rapidapi.com"
+//      "X-RapidAPI-Key": "API KEY"
     ]
 
     var urlRequest = URLRequest(url: url)
     urlRequest.httpMethod = "GET"
     urlRequest.allHTTPHeaderFields = headers
 
-    mainView.spinner.startAnimating()
+//    mainView.spinner.startAnimating()
 
     URLSession.shared.dataTask(with: urlRequest) { data, response, error in
       guard let data = data, error == nil else {
@@ -44,7 +45,6 @@ extension ViewController {
             self.mainView.definition.text = "N/A"
             self.mainView.posLbl.text = "N/A"
           }
-          self.mainView.spinner.stopAnimating()
         }
 //        print(word)
       } catch {
@@ -65,8 +65,9 @@ extension ViewController {
     }
 
     let headers = [
-      "X-RapidAPI-Key": "API KEY",
+      "X-RapidAPI-Key": "870345d456msh6692fe9241a5defp100fe2jsn6d004256b25b",
       "X-RapidAPI-Host": "wordsapiv1.p.rapidapi.com"
+//      "X-RapidAPI-Key": "API KEY"
     ]
 
     var urlRequest = URLRequest(url: url)
